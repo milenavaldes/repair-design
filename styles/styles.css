@@ -1,0 +1,242 @@
+@import url("./font.css");
+
+* {
+    box-sizing: border-box;
+    font-family: Nunito Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+h1 {
+    font-family: Yeseva One;
+}
+
+body {
+    margin: 0;
+    font-family: Nunito Sans, Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+button {
+    white-space: nowrap;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(277, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    text-align: center;
+    color: #fff;
+    font-family: Nunito Sans;
+    font-style: italic;
+    text-transform: uppercase;
+    cursor: pointer;   
+}
+
+.header-container {
+    width: 1256px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 83px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+    .header-container {
+        max-width: 100%;
+        height: 60px;
+    }
+
+    .header_button_callrequest {
+        display: none;
+    }
+
+}
+
+.header__logo {
+    padding: 20px;
+}
+
+.header__logo a {
+    display: flex;
+    white-space: nowrap;
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+.header_button_callrequest {
+    margin: 20px;
+}
+
+.phone-contact {
+    padding: 20px;
+    white-space: nowrap;
+    text-decoration: underline;
+    color: #E3B873;
+}
+
+@media (max-width: 375px) {
+    .phone-contact {
+        text-decoration: none;
+        color: #fff;
+    }
+
+}
+
+.phone-contact:hover,
+.header-navigation__item a:hover {
+    text-decoration: underline;
+    color: #E3B873;
+    cursor: pointer;
+}
+
+.header-navigation {
+    display: flex;
+    min-width: 580px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media (max-width: 375px){
+    .header-navigation {
+        display: none;
+    }
+}
+
+.header-navigation__item:first-child a {
+    color: #E3B873;
+}
+
+.header-navigation__item a {
+    list-style: none;
+    color: #fff;
+}
+
+.hero-rostov {
+    display: flex;
+    height: 707px;
+    background-image: url('../images/hero-rostov.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 375px) {
+    .hero-rostov {
+        height: 476px;
+    }
+}
+
+
+.hero-rostov__content-box {
+    width: 1256px;
+    margin: 0 auto;
+    margin-top: 194px;
+    margin-left: 134px;
+    max-width: 520px;
+    display:flex;
+    flex-direction: column;
+    width: 676px;
+    height: 306px;
+    color: #fff;
+}
+
+@media (max-width: 375px) {
+    .hero-rostov__content-box {
+        max-width: 339px;
+        margin: 0;
+        padding: 60px 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero-rostov__content-box {
+        width: 1256px;
+        margin: 0 auto;
+        padding-top: 194px;
+    }
+}
+
+.hero-rostov__content-box p {
+    font-size: 22px;
+    line-height: 163.68%;
+}
+
+.hero-shadow {
+    background: rgba(0, 0, 0, 0.70);
+    width: 100%;
+}
+
+.hero-rostov__content-box h1,
+.hero-rostov__content-box span {
+    font-family: Yeseva One;
+    line-height: 132.825%;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+    .hero-rostov__content-box h1, 
+    .hero-rostov__content-box span {
+        font-size: 23px;
+    }
+
+    .hero-rostov__content-box p {
+        font-size: 14px;
+    }
+}
+
+
+.hero-rostov__content-box--title span {
+    color: #E3B873;
+}
+
+.hero-rostov__content-box--buttons-box-element {
+    width: 207px;
+    height: 51px;
+    margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+    .hero-rostov__content-box--buttons-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-rostov__content-box--buttons-box-element {
+        width: 100%;
+        margin-top: 26px;
+    }
+}
+
+
+.transparent_button {
+    background: none;
+    border: solid #fff 1px;
+    box-shadow: none;
+}
+
+
+
+
