@@ -27,6 +27,10 @@ li {
     list-style-type: none;
 }
 
+ul {
+    padding-inline-start: 0px;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -50,7 +54,7 @@ button {
 }
 
 .header-container {
-    width: 1256px;
+    max-width: 1256px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -150,15 +154,15 @@ button {
 
 
 .hero-rostov__content-box {
-    width: 1256px;
     margin: 0 auto;
     margin-top: 194px;
     margin-left: 134px;
     max-width: 520px;
     display:flex;
     flex-direction: column;
-    width: 676px;
-    height: 306px;
+    max-width: 676px;
+    min-width: 490px;
+    max-height: 450px;
     color: #fff;
 }
 
@@ -216,6 +220,7 @@ button {
     width: 207px;
     height: 51px;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 @media (max-width: 375px) {
@@ -237,6 +242,96 @@ button {
     box-shadow: none;
 }
 
+.completed-projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #131313;
 
+}
 
+.completed-projects__description-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px;
+}
 
+.repair-description h1{
+    color:#E3B873;
+    font-size: 27px;
+    line-height: 138.6%;
+    letter-spacing: -1.89px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.repair-description p {
+    color: #FFF;
+    font-size: 14px;
+    line-height: 190.96%;
+    padding: 20px;
+}
+
+.repair-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.repair-details-ele {
+    min-width: 200px;
+}
+
+.repair-details h1{
+    color: #E3B873;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.repair-details p{
+    color: #FFF;
+    font-size: 13px;
+}
+
+.completed-projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.completed-projects__examples-view-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.completed-projects__examples-view-container--menu {
+    display: flex;
+    flex-direction: row;
+    padding: 107px 0px 52px 0px;
+}
+
+.completed-projects__examples-view-container--menu li {
+    color: rgba(255, 255, 255, 0.30);
+    font-size: 14px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    font-family: Yeseva One;
+    padding-right: 60px;
+    padding-left: 0px;
+    
+}
+
+.completed-projects__examples-view-container--menu li:first-child {
+    color:#E3B873;
+    text-decoration: underline;
+}
+
+.projects-scroller {
+    margin-top: 100px;
+}
