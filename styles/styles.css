@@ -15,8 +15,9 @@ h1 {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: Nunito Sans, Arial;
+
 }
 
 a {
@@ -32,8 +33,15 @@ ul {
 }
 
 header {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header-wrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     background-color: black;
 }
 
@@ -53,9 +61,7 @@ button {
     cursor: pointer;   
 }
 
-.header-container {
-    max-width: 1256px;
-    margin: 0 auto;
+.header-content-container {
     display: flex;
     flex-direction: row;
     height: 83px;
@@ -63,8 +69,14 @@ button {
     justify-content: space-between;
 }
 
+@media (min-width: 1300px) {
+    .header-content-container {
+    width: 1256px;
+    }
+}
+
 @media (max-width: 375px) {
-    .header-container {
+    .header-content-container {
         max-width: 100%;
         height: 60px;
     }
@@ -137,7 +149,7 @@ button {
     color: #fff;
 }
 
-.hero-rostov {
+.hero-rostov-pic {
     display: flex;
     height: 707px;
     background-image: url('../images/hero-rostov.jpg');
@@ -151,12 +163,18 @@ button {
         height: 476px;
     }
 }
-
+.hero-rostov__container {
+    display:flex;
+    max-width: 1256px;
+    margin: 0 auto;
+    align-items: start;
+    padding: 20px;
+}
 
 .hero-rostov__content-box {
     margin: 0 auto;
     margin-top: 194px;
-    margin-left: 134px;
+    margin-left: 0px;
     max-width: 520px;
     display:flex;
     flex-direction: column;
@@ -174,13 +192,7 @@ button {
     }
 }
 
-@media (min-width: 1600px) {
-    .hero-rostov__content-box {
-        width: 1256px;
-        margin: 0 auto;
-        padding-top: 194px;
-    }
-}
+
 
 .hero-rostov__content-box p {
     font-size: 22px;
