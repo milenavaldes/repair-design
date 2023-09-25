@@ -64,13 +64,15 @@ button {
 .header-content-container {
     display: flex;
     flex-direction: row;
+    padding: 20px;
     height: 83px;
     align-items: center;
     justify-content: space-between;
 }
 
 @media (min-width: 1300px) {
-    .header-content-container {
+    .header-content-container,
+    .section-content-container {
     width: 1256px;
     }
 }
@@ -149,7 +151,12 @@ button {
     color: #fff;
 }
 
-.hero-rostov-pic {
+section {
+    display: flex;
+    width: 100%;
+}
+
+.hero-rostov-background {
     display: flex;
     height: 707px;
     background-image: url('../images/hero-rostov.jpg');
@@ -158,13 +165,21 @@ button {
     background-repeat: no-repeat;
 }
 
+.completed-projects-background {
+    height: 800px;
+    background: #131313;
+    justify-content: center;
+}
+
 @media (max-width: 375px) {
-    .hero-rostov {
+    .hero-rostov-bacground {
         height: 476px;
     }
 }
-.hero-rostov__container {
+
+.section-content-container {
     display:flex;
+    flex-direction: column;
     max-width: 1256px;
     margin: 0 auto;
     align-items: start;
@@ -254,20 +269,11 @@ button {
     box-shadow: none;
 }
 
-.completed-projects {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background: #131313;
-
-}
-
 .completed-projects__description-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 480px;
+    width: 38%;
 }
 
 .repair-description h1{
@@ -276,24 +282,31 @@ button {
     line-height: 138.6%;
     letter-spacing: -1.89px;
     text-transform: uppercase;
-    padding: 20px;
 }
 
 .repair-description p {
     color: #FFF;
     font-size: 14px;
     line-height: 190.96%;
-    padding: 20px;
 }
 
 .repair-details {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    
+    justify-content: space-between;    
 }
+
+.completed-projects__examples-view-container--picture {
+    
+    width: 60%;
+}
+
+.completed-projects__examples-view-container--picture img {
+    width: 100%;
+    height: auto;
+}
+
 
 .repair-details-ele {
     min-width: 200px;
@@ -310,22 +323,18 @@ button {
     font-size: 13px;
 }
 
-.completed-projects {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
 .completed-projects__examples-view-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .completed-projects__examples-view-container--menu {
     display: flex;
     flex-direction: row;
     padding: 107px 0px 52px 0px;
+    align-self: end;
+    width: 60%;
 }
 
 .completed-projects__examples-view-container--menu li {
@@ -345,5 +354,18 @@ button {
 }
 
 .projects-scroller {
-    margin-top: 100px;
+    align-self: end;
+}
+
+.online-control-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131313;
+    font-size: 20px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    color: #FFF;
+    padding-top: 90px;
+    padding-bottom: 257px;
 }
