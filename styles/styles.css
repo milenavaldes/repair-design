@@ -37,6 +37,12 @@ header {
     align-items: center;
 }
 
+input {
+    width: 231px;
+    border: hidden;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
 .header-wrapper {
     display: flex;
     justify-content: center;
@@ -157,7 +163,6 @@ section {
 }
 
 .hero-rostov-background {
-    display: flex;
     height: 707px;
     background-image: url('../images/hero-rostov.jpg');
     background-size: cover;
@@ -368,4 +373,94 @@ section {
     color: #FFF;
     padding-top: 90px;
     padding-bottom: 257px;
+}
+
+.repair-request {
+    align-items: center;
+    margin-top: -200px;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.repair-request__page-separator-line {
+    width: 55px;
+    height: 62px;
+    border-bottom: solid 1.5px #E3B873;
+    margin-bottom: 30px;
+}
+
+.repair-request__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.repair-request__request-text-prompt span{
+    color: #363636;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    line-height: 204.6%;
+    
+}
+
+.repair-request__request-text-prompt {
+    max-width: 680px;
+    text-align: center;
+}
+
+.repair-request__form-ele {
+    display: flex;
+    flex-direction: column;
+    color: #363636;
+    font-size: 14px;
+    line-height: 163.68%;
+    padding: 40px;
+}
+
+.repair-request__form-ele label,
+.toggleCheck-label span {
+    font-size: 13px;
+    color: rgba(54, 54, 54, 0.50);
+    line-height: 163.68%;
+}
+
+.repair-request__form button {
+    width: 200px;
+    height: 51px;
+}
+
+#toggleCheck:not(:checked) + label #checkmark {
+    display: none;
+}
+
+.toggleCheck-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleCheck-label span {
+    padding-left: 16px;
+    font-size: 14px;
+    color:#363636;
+}
+
+.repair-request__form button {
+    margin: 40px;
+}
+
+.types-repair {
+    flex-direction: column;
+    align-items: center;
+}
+
+.types-repair__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
