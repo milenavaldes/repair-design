@@ -1,4 +1,7 @@
 @import url("./font.css");
+/*TODO:
+переписать projects-scroller, сделать линками
+переделать ролик в online-control по слоям*/
 
 * {
     box-sizing: border-box;
@@ -10,7 +13,7 @@
 
 }
 
-h1 {
+h1, h2 {
     font-family: Yeseva One;
 }
 
@@ -53,6 +56,7 @@ input {
 
 button {
     white-space: nowrap;
+    position: relative;
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(277, 184, 115, 0.2);
     border-radius: 2px;
@@ -65,6 +69,11 @@ button {
     font-style: italic;
     text-transform: uppercase;
     cursor: pointer;   
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 50px 15px rgba(227, 184, 115, 0.5);
 }
 
 .header-content-container {
@@ -463,4 +472,56 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.types-examples-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1060px) {
+    .types-examples-container {
+        flex-direction: column;
+    }
+}
+
+.types-examples-pic img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    min-width: 340px;
+}
+
+.types-examples-container-ele {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.types-examples-container-details {
+    align-self:center;
+    position: absolute;
+    padding: 20px 70px 20px 50px;
+    bottom: -150px;
+    color: #959595;
+    background-color: #FFF;
+    background: #FFF;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.types-examples-container-details li{
+    font-size: 13px;
+    list-style-type: disc;
+    line-height: 204.6%;
+}
+
+.types-examples-container-details h2{
+    font-size: 13px;
+    color: #363636;
+    font-size: 18px;
+    line-height: 138.6%;
 }
