@@ -15,6 +15,7 @@
 
 h1, h2 {
     font-family: Yeseva One;
+    line-height: 138.6%;
 }
 
 body {
@@ -70,6 +71,19 @@ button {
     text-transform: uppercase;
     cursor: pointer;   
     transition: all 0.3s ease-in-out;
+}
+
+.button2 {
+    border-radius: 0px;
+    position: absolute;
+    bottom: -20px;
+    left: 0%;
+    font-family: Yeseva One;
+    padding: 17px 19px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: normal;
+    box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.30);
 }
 
 button:hover {
@@ -293,7 +307,6 @@ section {
 .repair-description h1{
     color:#E3B873;
     font-size: 27px;
-    line-height: 138.6%;
     letter-spacing: -1.89px;
     text-transform: uppercase;
 }
@@ -505,12 +518,16 @@ section {
 .types-examples-container-details {
     align-self:center;
     position: absolute;
-    padding: 20px 70px 20px 50px;
+    padding: 20px 30px 20px 40px;
     bottom: -150px;
     color: #959595;
     background-color: #FFF;
     background: #FFF;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.types-examples-container-details ul {
+    padding-bottom: 20px;
 }
 
 .types-examples-container-details li{
@@ -523,5 +540,77 @@ section {
     font-size: 13px;
     color: #363636;
     font-size: 18px;
+}
+
+.measurment__background{
+    margin-top: 417px;
+    background-image: url('../images/measure-pic.svg');
+    background-position: bottom left; 
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.measurment-container__steps {
+    height: 100%;
+    counter-reset: elementCounter;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.measurment-container__steps-ele {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #363636;
+    font-size: 14px;
+    line-height: normal;
+}
+  
+.measurment-container__steps-ele::before {
+    counter-increment: elementCounter;
+    content: counter(elementCounter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 41px;
+    height: 41px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    background: rgba(227, 184, 115, 1);
+    color: white;
+    margin-right: 8px;
+    font-family: Yeseva One;
+    font-size: 18px;
     line-height: 138.6%;
+    box-shadow: 0px 5px 15px rgba(277, 184, 115, 0.2);
+}
+
+.measurment-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .measurment-container__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 506px;
+    background: #131313;
+    box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.measurment-container__form span {
+    display: flex;
+    align-self: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    line-height: 143.22%;
+    padding: 20px;
+    width: 70%;
 }
