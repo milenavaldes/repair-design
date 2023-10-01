@@ -242,7 +242,7 @@ section {
     line-height: 163.68%;
 }
 
-.hero-shadow {
+.hero-shadow, .project-styles-shadow {
     background: rgba(0, 0, 0, 0.70);
     width: 100%;
 }
@@ -610,11 +610,13 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
+    flex-wrap: wrap;
+}
 
-  .measurment-container__form {
+.measurment-container__form {
     display: flex;
     flex-direction: column;
+    position: relative;
     max-width: 506px;
     background: #131313;
     box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
@@ -662,3 +664,80 @@ input.black::placeholder {
     margin: 40px;
     align-self: end;
 }
+
+.savings-box {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: -160px;
+    align-items: center;
+    max-width: 400px;
+    justify-content: space-between;
+}
+
+.savings-box__text {
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    font-size: 18px;
+    line-height: 143.22%;
+    color: #E3B873;
+}
+
+.project-styles-background {
+    height: 864px;
+    background-image: url('../images/styles.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin-top: 180px;
+}
+
+.project-styles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-styles-examples {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-styles-examples img {
+    padding: 20px;
+    max-width: 354px;
+}
+
+.project-styles-container-pics {
+    display: flex;
+    flex-direction: row;
+    margin-top: -80px;
+}
+
+.project-styles__styles-list {
+    max-width: 300px;
+    padding-top: 60px;
+}
+
+.examples-pic-column1:first-child {
+    padding-top: 100px;
+}
+
+.project-styles__styles-list h2 {
+    color: #E3B873;
+    font-size: 27px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+}
+
+.project-styles__styles-list li {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 190.96%;
+}
+
+.project-styles__styles-list li:first-child {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
