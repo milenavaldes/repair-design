@@ -46,7 +46,6 @@ header {
 }
 
 input {
-    width: 231px;
     border: hidden;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
@@ -437,7 +436,8 @@ section {
     text-align: center;
 }
 
-.repair-request__form-ele, .measure-request__form-ele {
+.repair-request__form-ele, .measure-request__form-ele,
+.questions-request__form-ele {
     display: flex;
     flex-direction: column;
     color: #363636;
@@ -446,14 +446,21 @@ section {
     padding: 40px;
 }
 
+.questions-request__form-ele {
+    color: rgba(255, 255, 255, 0.50);
+}
+
 .measure-request__form-ele {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.50);
     width: 100%;
 }
 
-.repair-request__form-ele label,
-.toggleCheck-label span {
+.repair-request__form-ele input {
+    width: 231px;
+}
+
+.repair-request__form-ele label {
     font-size: 13px;
     color: rgba(54, 54, 54, 0.50);
     line-height: 163.68%;
@@ -469,6 +476,10 @@ section {
 }
 
 #measureToggleCheck:not(:checked) + label #measureCheckmark {
+    display: none;
+}
+
+#questionToggleCheck:not(:checked) + label #questionCheckmark {
     display: none;
 }
 
@@ -616,13 +627,25 @@ section {
     flex-wrap: wrap;
 }
 
-.measurment-container__form {
+.measurment-container__form,
+.questions-form-container {
     display: flex;
+    background: #131313;
     flex-direction: column;
     position: relative;
-    max-width: 506px;
-    background: #131313;
     box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.measurment-container__form {
+    width: 42%;
+}
+
+.questions-form-container {
+    max-width: 883px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 .measurment-container__form span {
@@ -644,7 +667,7 @@ input.black {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     flex-shrink: 0;
     line-height: 163.68%;
-    width: 408px;
+    
 }
 
 input.black::placeholder {
@@ -657,8 +680,30 @@ input.black::placeholder {
     padding-left: 40px;
 }
 
-.repair-request__form--checkbox span {
+.toggleCheck-label.question-black {
+    justify-content: start;
+    padding-left: 40px;
+}
+
+.repair-request__form--checkbox span,
+.questions__form--checkbox span {
     font-size: 14px;
+    align-self: center;
+    padding-top: 0px;
+}
+
+.questions__form--checkbox span {
+    color: #FFF;
+    padding-left: 10px;
+}
+
+.questions__form--checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 .measurment-container__form button {
@@ -924,4 +969,32 @@ input.black::placeholder {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.05;
+}
+
+.questions-form-container {
+    display: flex;
+}
+
+.questions-form-background{
+    align-items: center;
+    margin-top: -430px;
+}
+
+.questions-form-container h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.name-phone-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.questions-form-container button{
+    font-style: normal;
+    align-self: center;
+    width: 200px;
+    height: 51px;
+    margin-top: 20px;
 }
