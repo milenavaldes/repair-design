@@ -13,7 +13,7 @@
 
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Yeseva One;
     line-height: 138.6%;
 }
@@ -26,6 +26,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+p {
+    line-height: 163.68%;
 }
 
 li {
@@ -239,7 +243,6 @@ section {
 
 .hero-rostov__content-box p {
     font-size: 22px;
-    line-height: 163.68%;
 }
 
 .hero-shadow, .project-styles-shadow {
@@ -740,4 +743,155 @@ input.black::placeholder {
     color: #E3B873;
     text-decoration: underline;
 }
+
+.our-clients-background {
+    margin-top: 100px;
+}
+
+.our-clients-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-clients-container h2 {
+    color: #181818;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.they-recommend-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.they-recommend-us img {
+    width: 114px;
+    align-self: center;
+}
+
+.they-recommend-us p {
+    color: #363636;
+    text-align: center;
+    font-size: 18px;
+}
+
+.testimonials-ele {
+    display: flex;
+    flex-direction: column;
+    max-width: 376px;
+}
+
+.testimonials-ele__personal-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.testimonials-ele__personal-info--avatar {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 76px; 
+    height: 76px; 
+    border-radius: 50%;
+}
+
+.testimonials-1-avatar {
+    background-image: url('../images/testim-1.png');
+}
+
+
+.testimonials-ele__personal-info--name h3{
+    color: #181818;
+    font-size: 18px;
+    line-height: 127.05%;
+}
+
+.testimonials-1 {
+    position:relative;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+    padding: 20px 30px 67px 20px; 
+}
+
+.testimonials-ele__button3 {
+    display: flex;
+    width: 294px;
+    height: 54px;
+    background: #E3B873;
+    border-radius: 0px; 
+    left: 0%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: normal;
+    box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.30);
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-1-name {
+   padding-left: 20px;
+}
+
+.testimonials-ele__content p{
+    color: #959595;
+    font-size: 13px;
+    line-height: 180%;
+}
+
+.testimonials-1-button-content {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+}
+
+.testim-btn-area, .testim-btn-days {
+    display: flex;
+    color: #FFF;
+    font-family: Yeseva One;
+    font-size: 17px;
+    line-height: 138.6%;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.testim-btn-area::before {
+    content: "";
+    display: flex;
+    width: 32px;
+    height: 31px;
+    background-image: url('../images/testim-area.svg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 16px;
+}
+
+.testim-btn-separator {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 55px;
+    background-image: url('../images/testim-area-after.svg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.testim-btn-days::before {
+    content: "";
+    display: flex;
+    width: 32px;
+    height: 31px;
+    background-image: url('../images/testim-days-before.svg');
+    background-size: cover;
+    background-position: center;
+    margin: 0px 10px 0px 16px;
+}
+
 
