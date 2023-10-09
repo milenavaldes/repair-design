@@ -998,3 +998,51 @@ input.black::placeholder {
     height: 51px;
     margin-top: 20px;
 }
+
+.contacts-background {
+    height: 954px;
+    background-image: linear-gradient(to bottom, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0.8)), url('../images/contacts-background.png');
+    margin-right: 0px;
+    margin-top: -200px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    padding: 200px;
+    justify-content: center;
+}
+
+.contacts-container {
+    align-items: center;
+}
+
+.contacts-container__title,
+.contacts-container__title a {
+    color: #E3B873;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contacts-container__title a{
+    font-size: 20px;
+    font-family: Yeseva One;
+    display: inline;
+}
+
+.contacts-container__contact-icons {
+    display: flex;
+    width: 73px;
+    justify-content: space-between;
+}
+
+.contacts-container__map {
+    padding-top: 50px;
+}
+
+
+
+
