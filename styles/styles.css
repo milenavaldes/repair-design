@@ -1,7 +1,4 @@
 @import url("./font.css");
-/*TODO:
-переписать projects-scroller, сделать линками
-переделать ролик в online-control по слоям*/
 
 * {
     box-sizing: border-box;
@@ -80,6 +77,10 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
+button:active {
+    transform: scale(0.7);
+  }
+
 .button2 {
     border-radius: 0px;
     position: absolute;
@@ -134,6 +135,12 @@ button:hover {
     padding: 20px;
 }
 
+.header__logo:hover,
+.footer__logo:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 0.3s;
+}
+
 .header__logo a,
 .footer__logo a {
     display: flex;
@@ -168,6 +175,8 @@ button:hover {
     text-decoration: underline;
     color: #E3B873;
     cursor: pointer;
+    transform: scale(1.5);
+    transition: ease-in-out 0.3s;
 }
 
 .header-navigation,
@@ -382,7 +391,7 @@ section {
     width: 60%;
 }
 
-.completed-projects__examples-view-container--menu li {
+.completed-projects__examples-view-container--menu li{
     color: rgba(255, 255, 255, 0.30);
     font-size: 14px;
     line-height: 138.6%;
@@ -390,13 +399,13 @@ section {
     font-family: Yeseva One;
     padding-right: 60px;
     padding-left: 0px;
-    
 }
 
-.completed-projects__examples-view-container--menu li:first-child {
+.completed-projects__examples-view-container--menu .current{
     color:#E3B873;
     text-decoration: underline;
 }
+
 
 .projects-scroller {
     align-self: end;
@@ -420,6 +429,14 @@ section {
     margin-top: -200px;
     flex-direction: column;
     margin-bottom: 100px;
+}
+
+.repair-request__pic-container {
+    max-width: 800px;
+}
+
+.repair-request__pic-container img{
+    width: 100%;
 }
 
 .repair-request__page-separator-line {
@@ -768,8 +785,18 @@ input.black::placeholder {
 }
 
 .project-styles-examples img {
+    width: 100%;
+}
+
+.project-styles-examples img {
     padding: 20px;
     max-width: 354px;
+    transition: transform 3s ease;
+}
+
+.project-styles-examples img:hover {
+    transform: scale(1.2);
+    transition: 3s;
 }
 
 .project-styles-container-pics {
@@ -794,15 +821,15 @@ input.black::placeholder {
     text-transform: uppercase;
 }
 
-.project-styles__styles-list li {
+.project-styles__styles-list li a{
     color: #FFF;
     font-size: 20px;
     line-height: 190.96%;
 }
 
-.project-styles__styles-list li:first-child {
-    color: #E3B873;
+.project-styles__styles-list .current a {
     text-decoration: underline;
+    color: #E3B873;
 }
 
 .our-clients-background {
@@ -866,6 +893,12 @@ input.black::placeholder {
     width: 76px; 
     height: 76px; 
     border-radius: 50%;
+    transition: transform 1s ease;
+}
+
+.testimonials-ele__personal-info--avatar:hover {
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .testimonials-1-avatar {
@@ -907,6 +940,13 @@ input.black::placeholder {
     box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.30);
     justify-content: center;
     align-items: center;
+    transition: transform 1s ease;
+    z-index: 10;
+}
+
+.testimonials-ele__button3:hover {
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .testimonials-1-name {
@@ -1055,8 +1095,18 @@ input.black::placeholder {
     justify-content: space-between;
 }
 
+.contacts-container__contact-icons a:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 0.3s;
+}
+
 .contacts-container__map {
     padding-top: 50px;
+}
+
+.contacts-container__map:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
 }
 
 
