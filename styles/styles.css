@@ -40,9 +40,13 @@ ul {
     padding-inline-start: 0px;
 }
 
-header {
+header, footer {
     margin: 0 auto;
     align-items: center;
+}
+
+.phone-contact a {
+    color: #E3B873;
 }
 
 input {
@@ -50,7 +54,7 @@ input {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
-.header-wrapper {
+.header-footer-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +97,8 @@ button:hover {
     box-shadow: 0 0 50px 15px rgba(227, 184, 115, 0.5);
 }
 
-.header-content-container {
+.header-content-container,
+.footer-content-container {
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -104,35 +109,41 @@ button:hover {
 
 @media (min-width: 1300px) {
     .header-content-container,
+    .footer-content-container,
     .section-content-container {
     width: 1256px;
     }
 }
 
 @media (max-width: 375px) {
-    .header-content-container {
+    .header-content-container
+    .footer-content-container {
         max-width: 100%;
         height: 60px;
     }
 
-    .header_button_callrequest {
+    .header_button_callrequest,
+    .footer_button_callrequest {
         display: none;
     }
 
 }
 
-.header__logo {
+.header__logo,
+.footer__logo {
     padding: 20px;
 }
 
-.header__logo a {
+.header__logo a,
+.footer__logo a {
     display: flex;
     white-space: nowrap;
     color: #E3B873;
     text-transform: uppercase;
 }
 
-.header_button_callrequest {
+.header_button_callrequest
+.footer_button_callrequest {
     margin: 20px;
 }
 
@@ -152,13 +163,15 @@ button:hover {
 }
 
 .phone-contact:hover,
-.header-navigation__item a:hover {
+.header-navigation__item a:hover,
+.footer-navigation__item a:hover {
     text-decoration: underline;
     color: #E3B873;
     cursor: pointer;
 }
 
-.header-navigation {
+.header-navigation,
+.footer-navigation {
     display: flex;
     min-width: 580px;
     flex-direction: row;
@@ -169,16 +182,19 @@ button:hover {
 }
 
 @media (max-width: 375px){
-    .header-navigation {
+    .header-navigation,
+    .footer-navigation {
         display: none;
     }
 }
 
-.header-navigation__item:first-child a {
+.header-navigation__item:first-child a,
+.footer-navigation__item:first-child a {
     color: #E3B873;
 }
 
-.header-navigation__item a {
+.header-navigation__item a,
+.footer-navigation__item a{
     list-style: none;
     color: #fff;
 }
@@ -1042,6 +1058,8 @@ input.black::placeholder {
 .contacts-container__map {
     padding-top: 50px;
 }
+
+
 
 
 
