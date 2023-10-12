@@ -57,6 +57,17 @@ input {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
+@media (max-width: 375px) {
+    input {
+        border-bottom: 1px solid #c3c3c3;
+    }
+
+    input::placeholder {
+        color: #FFF;
+        line-height: 138.72%;
+    }
+}
+
 .header-footer-wrapper {
     display: flex;
     justify-content: center;
@@ -295,11 +306,7 @@ section {
         margin: 0;
         padding: 60px 20px;
     }
-
-
 }
-
-
 
 .hero-rostov__content-box p {
     font-size: 22px;
@@ -308,6 +315,12 @@ section {
 .hero-shadow, .project-styles-shadow {
     background: rgba(0, 0, 0, 0.70);
     width: 100%;
+}
+
+@media (max-width: 375px) {
+    .project-styles-shadow  {
+        background: none;
+    }
 }
 
 .hero-rostov__content-box h1,
@@ -604,6 +617,7 @@ section {
 @media (max-width: 375px) {
     .repair-request {
         background-color: #131313;
+        height: 750px;
     }
 }
 
@@ -629,6 +643,12 @@ section {
     margin-bottom: 30px;
 }
 
+@media (max-width: 375px) {
+    .repair-request__page-separator-line {
+        margin-top: -30px;
+    }
+}
+
 .repair-request__form {
     display: flex;
     flex-direction: row;
@@ -636,6 +656,12 @@ section {
     max-width: 1440px;
     padding-top: 100px;
     align-items: center;
+}
+
+@media (max-width: 375px) {
+    .repair-request__form {
+        padding-top: 20px;
+    }
 }
 
 .repair-request__request-text-prompt span{
@@ -671,6 +697,12 @@ section {
     padding: 40px;
 }
 
+@media (max-width: 375px) {
+    .repair-request__form-ele {
+        padding: 20px 0px;
+    }
+}
+
 .questions-request__form-ele {
     color: rgba(255, 255, 255, 0.50);
 }
@@ -685,6 +717,14 @@ section {
     width: 231px;
 }
 
+@media (max-width: 375px) {
+    .repair-request__form-ele input {
+        width: 330px;
+        background-color: #131313;
+        color: #FFF;
+    }
+}
+
 .repair-request__form-ele label {
     font-size: 13px;
     color: rgba(54, 54, 54, 0.50);
@@ -694,6 +734,19 @@ section {
 .repair-request__form button {
     width: 200px;
     height: 51px;
+}
+
+@media (max-width: 375px) {
+    .repair-request__form-ele label {
+        color: rgba(255, 255, 255, 0.50);    
+        font-size: 13px;
+        line-height: 163.68%;
+        padding: 20px 0px;
+    }
+
+    .repair-request__form button {
+        width: 100%;
+    }
 }
 
 #toggleCheck:not(:checked) + label #checkmark {
@@ -721,8 +774,22 @@ section {
     color:#363636;
 }
 
+@media (max-width: 375px) {
+    .toggleCheck-label span {
+        color: #FFF;    
+        font-size: 13px;
+        line-height: 163.68%;
+    }
+}
+
 .repair-request__form button {
     margin: 40px;
+}
+
+@media (max-width: 375px) {
+    .repair-request__form button {
+        margin-bottom: -300px;
+    }
 }
 
 .types-repair {
@@ -752,6 +819,13 @@ section {
     }
 }
 
+@media (max-width: 375px) {
+    .types-examples-container {
+        flex-direction: column;
+        position: unset;
+    }
+}
+
 .types-examples-pic img {
     width: 100%;
     height: auto;
@@ -759,9 +833,22 @@ section {
     min-width: 340px;
 }
 
+@media (max-width: 375px) {
+    .types-examples-pic img {
+        padding: 0px;
+    }
+}
+
 .types-examples-container-ele {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 375px) {
+    .types-examples-container-ele {
+        position:relative;
+        margin-bottom: 200px;
+    }
 }
 
 
@@ -774,6 +861,18 @@ section {
     background-color: #FFF;
     background: #FFF;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 375px) {
+    .types-examples-container-details {
+        align-self:start;
+    }
+}
+
+@media (max-width: 375px) {
+    .types-examples-container {
+        flex-direction: column;
+    }
 }
 
 .types-examples-container-details ul {
@@ -798,6 +897,12 @@ section {
     background-position: bottom left; 
     background-repeat: no-repeat;
     margin-bottom: 100px;
+}
+
+@media (max-width: 375px) {
+    .measurment__background {
+        display: none;
+    }
 }
 
 .measurment-container__steps {
@@ -917,6 +1022,12 @@ input.black::placeholder {
     padding-top: 0px;
 }
 
+@media (max-width: 375px) {
+    .repair-request__form--checkbox {
+        margin-top: 50px;
+    }
+}
+
 .questions__form--checkbox span {
     color: #FFF;
     padding-left: 10px;
@@ -964,6 +1075,13 @@ input.black::placeholder {
     margin-top: 180px;
 }
 
+@media (max-width: 375px) {
+    .project-styles-background  {
+        background-image: none;
+        margin-top: -100px;
+    }
+}
+
 .project-styles-container {
     display: flex;
     flex-direction: row;
@@ -997,6 +1115,12 @@ input.black::placeholder {
     margin-top: -80px;
 }
 
+@media (max-width: 375px) {
+    .project-styles-container-pics  {
+        display: none;
+    }
+}
+
 .project-styles__styles-list {
     max-width: 300px;
     padding-top: 60px;
@@ -1011,6 +1135,13 @@ input.black::placeholder {
     font-size: 27px;
     line-height: 138.6%;
     text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+    .project-styles__styles-list h2  {
+        font-size: 22px;
+        text-align: center;
+    }
 }
 
 .project-styles__styles-list li a{
