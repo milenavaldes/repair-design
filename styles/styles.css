@@ -42,6 +42,12 @@ header, footer {
     align-items: center;
 }
 
+@media (max-width: 375px) {
+    footer {
+        display: none;
+    }
+}
+
 .phone-contact a {
     color: #E3B873;
 }
@@ -280,13 +286,6 @@ section {
     }
 }
 
-@media (max-width: 375px) {
-    .section-content-container {
-        align-items: center;
-    }
-}
-
-
 .hero-rostov__content-box {
     margin: 0 auto;
     margin-top: 194px;
@@ -417,20 +416,30 @@ section {
     }
 }
 
-.completed-projects__slider{
+.completed-projects__slider, 
+.project-styles__slider {
     display: none;
 }
 
 @media (max-width: 375px) {
-    .completed-projects__slider{
+    .completed-projects__slider, 
+    .project-styles__slider {
         display: flex;
-        background-image: url('../images/slider-pic.jpg');
         width: 340px;
         height: 241px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 20px;
+        overflow: hidden;
+    }
+
+    .completed-projects__slider {
+        background-image: url('../images/slider-pic.jpg');
+    }
+
+    .project-styles__slider {
+        background-image: url('../images/project-slyle-pic.jpg');
     }
 }
 
@@ -700,6 +709,10 @@ section {
 @media (max-width: 375px) {
     .repair-request__form-ele {
         padding: 20px 0px;
+    }
+    .questions-request__form-ele, 
+    .measure-request__form-ele {
+        padding: 40px 0px;
     }
 }
 
@@ -978,6 +991,17 @@ section {
     padding-left: 15%;
 }
 
+@media (max-width: 375px) {
+    .questions-form-container {
+        padding-top: 180px;
+    }
+
+    .questions-form-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 .measurment-container__form span {
     display: flex;
     align-self: center;
@@ -997,7 +1021,14 @@ input.black {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     flex-shrink: 0;
     line-height: 163.68%;
-    
+}
+
+@media (max-width: 375px) {
+    input.black {
+
+        border-bottom: 1px solid #FFF;
+
+    }
 }
 
 input.black::placeholder {
@@ -1080,12 +1111,22 @@ input.black::placeholder {
         background-image: none;
         margin-top: -100px;
     }
+
+    .project-styles-background{
+        height: 700px;
+    }
 }
 
 .project-styles-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+    .project-styles-container {
+        flex-direction: column;
+    }
 }
 
 .project-styles-examples {
@@ -1124,6 +1165,14 @@ input.black::placeholder {
 .project-styles__styles-list {
     max-width: 300px;
     padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 375px) {
+    .project-styles__styles-list ul {
+        display: none;
+    }
 }
 
 .examples-pic-column1:first-child {
@@ -1159,6 +1208,12 @@ input.black::placeholder {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 375px) {
+    .our-clients-background  {
+        display: none;
+    }
 }
 
 .our-clients-container {
@@ -1340,13 +1395,16 @@ input.black::placeholder {
     margin-top: -250px;
 }
 
+/*TRY HERE!!!*/
+
 .our-clients__lower-background-peace {
     width: 1127px;
     margin-right: 0px;
     background-image: url('../images/background_lower.svg');
-    background-size: contain;
+    background-size:auto;
     background-position: center;
     background-repeat: no-repeat;
+    background-position: bottom;
     opacity: 0.05;
 }
 
@@ -1359,6 +1417,16 @@ input.black::placeholder {
     margin-top: -430px;
 }
 
+@media (max-width: 375px) {
+    .questions-form-background {
+        margin-top: -403px;
+        position: relative;
+        z-index: -10;
+        display: block;
+        background-color: #131313;
+    }
+}
+
 .questions-form-container h1 {
     color: #FFF;
     text-transform: uppercase;
@@ -1368,6 +1436,13 @@ input.black::placeholder {
 .name-phone-container {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 375px) {
+    .name-phone-container {
+        flex-direction: column;
+    }
+
 }
 
 .questions-form-container button{
@@ -1394,6 +1469,21 @@ input.black::placeholder {
 @media (max-width: 1100px) {
     .contacts-background {
         height: 800px;
+        margin-top: 0px;
+        padding: 0px;
+        display: block;
+    }
+
+    .contacts-container__title h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contacts-background{
+        background-image: none;
+        background-color: #131313;
+        height: 400px;
     }
 }
 
@@ -1446,13 +1536,23 @@ input.black::placeholder {
     width: 100%;
 }
 
+@media (max-width: 1100px) {
+    .contacts-container__map img {
+        width: 100%;
+        display: flex;
+        align-self: center;
+    }
+
+    .contacts-container__map {
+        min-width: 100px;
+        align-self: center;
+    }
+}
+
 .contacts-container__map:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.3s;
 }
-
-
-
 
 
 
