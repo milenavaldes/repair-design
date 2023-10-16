@@ -7,7 +7,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 h1, h2, h3 {
@@ -775,13 +774,17 @@ section {
 }
 
 
-.toggleCheck-label, .measureToggleCheck-label {
+.toggleCheck-label, 
+.measureToggleCheck-label, 
+.questionToggleCheck-label {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.toggleCheck-label span, .measureToggleCheck-label span {
+.toggleCheck-label span,
+.measureToggleCheck-label span,
+.questionToggleCheck-label span {
     padding-left: 16px;
     font-size: 14px;
     color:#363636;
@@ -789,6 +792,12 @@ section {
 
 @media (max-width: 375px) {
     .toggleCheck-label span {
+        color: #FFF;    
+        font-size: 13px;
+        line-height: 163.68%;
+    }
+
+    .questionToggleCheck-label {
         color: #FFF;    
         font-size: 13px;
         line-height: 163.68%;
@@ -989,6 +998,7 @@ section {
     padding-bottom: 30px;
     padding-right: 15%;
     padding-left: 15%;
+    align-self: center;
 }
 
 @media (max-width: 375px) {
@@ -1393,9 +1403,17 @@ input.black::placeholder {
     flex-direction: row;
     height: 776px;
     margin-top: -250px;
+    position: absolute;
+    top: -500px;
+    width: 100vw;
+    overflow-y: hidden;
 }
 
-/*TRY HERE!!!*/
+@media (max-width: 375px){
+    .our-clients__lower-background-container {
+        display: none;
+    }
+}
 
 .our-clients__lower-background-peace {
     width: 1127px;
@@ -1414,7 +1432,7 @@ input.black::placeholder {
 
 .questions-form-background{
     align-items: center;
-    margin-top: -430px;
+    margin-top: 100px;
 }
 
 @media (max-width: 375px) {
@@ -1457,13 +1475,14 @@ input.black::placeholder {
     height: 954px;
     background-image: linear-gradient(to bottom, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0.8)), url('../images/contacts-background.png');
     margin-right: 0px;
-    margin-top: -200px;
+    margin-top: -250px;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    padding: 200px;
+    padding: 230px;
     justify-content: center;
+    position: relative;
 }
 
 @media (max-width: 1100px) {
